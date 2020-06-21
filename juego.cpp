@@ -1,7 +1,39 @@
 #include <iostream>
+#include <stdlib.h>
 #include "juego.h"
 using namespace std;
 
+void Mapa::crearJuego(){
+    int x = getX();
+    int y = getY();
+    bool tesoro = False;
+    int nb = getNumeroBombas();
+
+    for (int a=0;a<x;a++){
+        for (int b=0;b<y;b++){
+            if (tesoro==False){
+                num=1+rand()%(3-0);
+                if (num==1 && nb!=0){
+                    nb--;
+                    mapa[a][b] = num;
+                } else if (num==2) {
+                    mapa[a][b] = num;
+                    tesoro = True;
+                } else {
+                    mapa[a][b] = 0;
+                }
+            } else {
+                num=1+rand()%(2-0);
+                if (num==1 && nb!=0){
+                    nb--;
+                    mapa[a][b] = num;
+                } else {
+                    mapa[a][b] = 0;
+                }
+            }
+        }
+    }
+}
 
 int Mover(char d[1]){
     if (d == "N"){
@@ -12,10 +44,9 @@ int Mover(char d[1]){
 };
 
 int Explorar(int r){
-
+    int cant = 0;
+    for (int i=0;i<=r;i++){
+        if (mapa[x+i][y+i]==1) cant++;
+        if (mapa[x-i][y-i]==1) cant++;
+    }
 };
-
-
-
-    int Explorar(int);
-    int Mover(char);

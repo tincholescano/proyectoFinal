@@ -1,5 +1,5 @@
 class Jugador{
-  private:
+  protected:
     int posX, posY, cantVidas;
   public:
     Jugador();

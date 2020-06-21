@@ -1,5 +1,5 @@
 class Mapa{
-  private:
+  protected:
     int X, Y, nroBombas;
   public:
     Mapa();
