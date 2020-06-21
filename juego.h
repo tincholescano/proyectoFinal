@@ -1,12 +1,6 @@
-class Juego{
-private:
-    int tamX, tamY, nroBombas;
-};
+#include "mapa.cpp"
 
-class Jugador{
-  private:
-    int  cantVidas, posX, posY;
+class Juego: public Mapa{
   public:
-    int Mover(char);
-    int Explorar(char);
+    Juego(char* x,int y,char* nb):Mapa(x,y,nb){};
 };

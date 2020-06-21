@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main(){
@@ -12,10 +13,16 @@ int main(){
     cin>>cantVidas;
     cout<<"Ingrese el numero de bombas: ";
     cin>>nroBombas;
+    void crearMapa();
     do {
-        int accion;
-        cout<<"Desea moverse o explorar?(M/E)";
-        cin>>accion;
-
+        int r;
+        cout<<"Desea moverse o explorar?(1/2)";
+        cin>>r;
+        if (r == 1) {
+            char d[1];
+            cout<<"Hacia donde desea avanzar?(N-O-S-E)";
+            cin>>d;
+            int Mover(d);
+        } else int Explorar(r);
     } while (cantVidas != 0);
 }
