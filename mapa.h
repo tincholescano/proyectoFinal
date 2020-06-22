@@ -1,13 +1,11 @@
 class Mapa{
   protected:
-    int X, Y, nroBombas;
+    int tam, nroBombas;
   public:
     Mapa();
-    Mapa(int,int,int);
-    void setX(int);
-    void setY(int);
+    Mapa(int,int);
+    void setTam(int);
     void setNumeroBombas(int);
-    int getX();
-    int getY();
+    int getTam();
     int getNumeroBombas();
 };

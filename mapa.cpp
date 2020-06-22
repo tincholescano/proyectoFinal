@@ -3,32 +3,27 @@
 using namespace std;
 
 Mapa::Mapa(){
-    X = 1;
-    Y =1;
+    tam = 1;
     nroBombas = 1;
 }
 
-Mapa::Mapa(int x,int y,int nb){
-    X = x;
-    Y = y;
+Mapa::Mapa(int t,int nb){
+    tam = t;
     nroBombas = nb;
 }
 
-void Mapa::setX(int x){
-    X = x;
+void Mapa::setTam(int t){
+    tam = t;
 }
-void Mapa::setY(int y){
-    Y = y;
-}
+
 void Mapa::setNumeroBombas(int nb){
     nroBombas = nb;
 }
-int Mapa::getX(){
-    return X;
+
+int Mapa::getTam(){
+    return tam;
 }
-int Mapa::getY(){
-    return Y;
-}
+
 int Mapa::getNumeroBombas(){
     return nroBombas;
 }

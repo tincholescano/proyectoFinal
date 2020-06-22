@@ -4,13 +4,12 @@
 using namespace std;
 
 void Mapa::crearJuego(){
-    int x = getX();
-    int y = getY();
+    int t = getTam();
     bool tesoro = False;
     int nb = getNumeroBombas();
 
-    for (int a=0;a<x;a++){
-        for (int b=0;b<y;b++){
+    for (int a=0;a<t;a++){
+        for (int b=0;b<t;b++){
             if (tesoro==False){
                 num=1+rand()%(3-0);
                 if (num==1 && nb!=0){

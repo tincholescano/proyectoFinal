@@ -4,7 +4,7 @@ class Juego: public Mapa{
   protected:
     int mapa[][];
   public:
-    Juego(int x,int y,int nb):Mapa(x,y,nb){mapa[x][y]};
+    Juego(int t,int nb):Mapa(t,nb){mapa[t][t]};
     void crearJuego();
     int Explorar(int);
 };

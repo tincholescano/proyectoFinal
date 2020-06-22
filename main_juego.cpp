@@ -3,12 +3,10 @@
 using namespace std;
 
 int main(){
-    int tamX, tamY, cantVidas, nroBombas;
+    int tam, cantVidas, nroBombas;
     cout<<"BIENVENIDO"<<endl;
-    cout<<"Ingrese el ancho del tablero: ";
-    cin>>tamX;
-    cout<<"Ingrese el largo del tablero: ";
-    cin>>tamY;
+    cout<<"Ingrese el tamaño del tablero: ";
+    cin>>tam;
     cout<<"Ingrese la cantidad de vidas: ";
     cin>>cantVidas;
     cout<<"Ingrese el numero de bombas: ";
