@@ -9,5 +9,5 @@ class Juego: public Mapa, Jugador{
     void crearJuego();
     bool validar(int,int);
     int Explorar(int);
-    int Mover(char);
+    int Mover(char*);
 };
